@@ -1,0 +1,142 @@
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 100;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff");
+}
+
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 300;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-light-webfont.woff");
+}
+
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 500;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff");
+}
+
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 700;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "San Francisco";
+}
+
+:root {
+    --main-color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.watch-title {
+    & > .orange-subtitle {
+        display: block;
+        color: #FF6410;
+        font-size: 16px;
+        letter-spacing: 3px;
+    }
+
+    & > .red-subtitle {
+        display: block;
+        color: red;
+        font-size: 16px;
+        letter-spacing: 3px;
+    }
+}
+
+.watch-8-title {
+    .red-subtitle {
+        display: block;
+        color: red;
+        font-size: 16px;
+        letter-spacing: 3px;
+    }
+}
+
+.gift-card-title {
+    .purple-title {
+        color: #CA2166;
+    }
+}
+
+.apple__slider {
+
+    .apple__slide.swiper-slide-active {
+        opacity: 1;
+
+        .slider__desc {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .swiper-pagination {
+        position: static !important;
+        padding: 10px 0;
+
+        .swiper-pagination-bullet {
+            width: 9px !important;
+            height: 9px !important;
+            background: #727272 !important;
+
+            &.swiper-pagination-bullet-active {
+                background: #8b8b8b !important;
+            }
+        }
+    }
+}
+
+.footer__copyright-shop {
+    a {
+        color: #0066CC;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #505050fd;
+}
